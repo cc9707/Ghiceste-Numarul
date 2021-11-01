@@ -22,7 +22,7 @@ while raspuns1 != 'nu' and raspuns1 != 'Nu' and raspuns1 != 'NU' and raspuns1 !=
 while raspuns1 == strin or raspuns1 == str1 or raspuns1 == str2:            #while answer == 'yes':
     print('\033[93m' + "-> Cum te numești?" + '\033[91m')                   #"What's your name?"
     nume = input()                                                          #String input for your name.
-    print('\033[93m' + "-> " + nume[0].upper() + nume[1:] + ", gândește-te la un număr între 1 și 50 !" + '\033[0m')    #"Pick a number between 1 and 50!"
+    print('\033[93m' + "-> " + nume[0].upper() + nume[1:].lower() + ", gândește-te la un număr între 1 și 50 !" + '\033[0m')    #"Pick a number between 1 and 50!"
     time.sleep(0.25)                                                        #It'll be a 0.25 seconds delay.
 
     #You will have 10 chances to guess the number
